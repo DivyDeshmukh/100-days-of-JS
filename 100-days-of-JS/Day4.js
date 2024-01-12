@@ -127,6 +127,7 @@ function numOfOccur (str, char) {
 console.log(numOfOccur ("Divy Deshmukh", 'h'));
 */
 
+/*
 // 5. Program to print the table of any user defined number using function in js
 function table (num) {
     for (let i = 1; i <= 10; i++) {
@@ -134,4 +135,5 @@ function table (num) {
     }
 }
 
-table(10)
+table(10);
+*/
