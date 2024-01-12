@@ -37,9 +37,10 @@ console.log(2 - '2');                   // remember all the arithemetic operator
 console.log('2' - 2);           // 0
 */
 
-// Given a string, reverse each word in the sentence
+/*
+// 4. Given a string, reverse each word in the sentence
 var str = "Harsh bhai kaise ho";
-let arr = [];
+
 // let arr = [];
 // let arr2 = [];
 
@@ -62,6 +63,33 @@ let arr = [];
 //     arr3.push(val.join(''))
 // }
 // console.log(arr3.join(' '));
-for (let val of str) {
-    
+
+// another method
+// let arr = str.split(" ");               // on the basis of space we want to split
+// let arr2 = []
+
+// for (let val of arr) {
+//     arr2.push(val.split('').reverse());
+// }
+// for (let val of arr2) {
+//     arr2[arr2.indexOf(val)] = val.join('');
+// }
+// console.log(arr2.join(' '));
+
+// another more efficient
+var savedStr = str.split(' ').map(function (word) {
+    return word.split("").reverse().join("");
+});
+
+console.log(savedStr.join(' '));
+*/
+
+/*
+// 5. Check whether it is an array or not
+function checkArr (elem) {
+    return Array.isArray(elem);
 }
+
+console.log(checkArr([]));
+console.log(checkArr({}));
+*/
