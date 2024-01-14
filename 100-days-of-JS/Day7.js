@@ -61,6 +61,7 @@ function add (arr) {
 console.log(add([1, 2, 3, 4, "Divy", "okow", 100, "pop"]));
 */
 
+/*
 // 5. Loop an array of objects and remove all objects which do not have gender's value male
 function remove(arr) {
     // for (let val of arr) {
@@ -100,3 +101,5 @@ console.log(remove(
         gender: 'male'
     }]
 ));
+*/
+
