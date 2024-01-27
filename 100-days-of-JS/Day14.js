@@ -47,11 +47,30 @@ const firstArr = users.find(function(val) {
 console.log(firstArr);
 */
 
+/*
 // 3) Which user commented 'OK great thanks'?
-const id = comments.find((val) => val.text === 'Ok great thanks')
+// const user = users.find(u => u.id == comments.find(c => c.text == 'OK great thanks').userId);
+const user = users.find(user => user.id == comments.find(comment => comment.text === 'OK great thanks').userId);
+console.log(user);
+*/
 
+/*
 // 4) Add the user's first and last name to each comment in the comments array
+users.forEach (function(val) {
+    comments.forEach (function (val2) {
+        if(val.id === val2.userId) {
+            val2['firstName'] = val.firstName;
+            val2['lastName'] = val.lastName;
+        }
+    })
+})
 
+console.log(comments);
+*/
 
-
+/*
 // 5) Get a list of the users who haven't commented
+const check = users.filter(user => !comments.find(comment => comment.userId === user.id));
+console.log(check);
+*/
+
