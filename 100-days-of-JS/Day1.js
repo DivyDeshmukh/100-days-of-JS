@@ -130,25 +130,22 @@ console.log(factorial("oiajfoafoajfa5454"));
 // }
 
 // another method
-function prime (num) {
-    if (typeof num !== 'number' || isNaN(num) || !Number.isInteger(num)) {
-        return ("Enter a valid number");
-    }else if (num <= 0) {
-        return ("Prime numbers only includes natural numbers");
-    }else if (num === 1) {
-        return ("Neither prime nor composite");
-    }else {
-        for (let i = 2; i < num || num === 2; i++) {
-            if (num % i === 0 && num !== 2) {
+function isPrime(num) {
+    if (typeof num !== 'number' || isNaN(num) || !Number.isInteger(num) || num <= 0) {
+        return "Enter a valid natural number";
+    } else if (num === 1) {
+        return "Neither prime nor composite";
+    } else {
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
                 return `No, ${num} is not a prime number.`;
-            }else {
-                return `Yes, ${num} is a prime number.`
             }
         }
+        return `Yes, ${num} is a prime number.`;
     }
-        
 }
 
-console.log(prime(2));
+console.log(isPrime(9));
 */
+
 
