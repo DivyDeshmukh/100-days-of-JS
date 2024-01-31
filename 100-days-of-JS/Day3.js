@@ -95,16 +95,14 @@ console.log(test);
 
 //     return intersectionArr;
 // }
-
-function intersection (arr1, arr2) {
-    const intersectionArr = arr1.filter( (val) => {
-        return (arr2.includes(val));
-    });
-    return intersectionArr;
-}
-
-console.log(intersection([1, 2, 3, 4], [2, 3, 8, 4]));
 */
+
+// function intersection (arr1, arr2) {
+//     const intersectionArr = arr1.filter( (val) => (arr2.includes(val)));
+//     return intersectionArr;
+// }
+
+// console.log(intersection([1, 2, 3, 4], [2, 3, 8, 4]));
 
 /*
 // 5. How to find union of two arrays in js

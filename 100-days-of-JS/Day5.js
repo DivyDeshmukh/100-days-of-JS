@@ -63,8 +63,10 @@ var str = "Harsh bhai kaise ho";
 //     arr3.push(val.join(''))
 // }
 // console.log(arr3.join(' '));
+*/
 
 // another method
+// var str = "Harsh bhai kaise ho";
 // let arr = str.split(" ");               // on the basis of space we want to split
 // let arr2 = []
 
@@ -76,6 +78,7 @@ var str = "Harsh bhai kaise ho";
 // }
 // console.log(arr2.join(' '));
 
+/*
 // another more efficient
 var savedStr = str.split(' ').map(function (word) {
     return word.split("").reverse().join("");
@@ -92,4 +95,5 @@ function checkArr (elem) {
 
 console.log(checkArr([]));
 console.log(checkArr({}));
+console.log(typeof [1,2,3]);
 */
