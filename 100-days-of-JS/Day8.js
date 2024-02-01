@@ -67,13 +67,13 @@ function freqItem (arr) {
 
     var ans = Object.keys(obj).reduce(function (acc, num) {
         return obj[acc] > obj[num] ? acc : num;
-    });
-    console.log(ans);
+    }, 0);
+    return (ans);
 }
 
 console.log(freqItem([3, 32, 1, 3,2, 45,3, 4,6]));
 */
-
+ 
 /*
 // 5. Write a program to shuffle an array
 function shuffleArr (arr) {

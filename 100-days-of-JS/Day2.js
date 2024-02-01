@@ -125,8 +125,9 @@ let arr = arr1.concat(arr2);
 
 // let [a, b, ...others] = arr;
 // console.log(a);
-// b = 4;
 // console.log(b);
+// b = 4;
+// console.log(b);                              // value of b will change
 // console.log(others);
 // console.log(arr);
 
@@ -149,4 +150,4 @@ let arr = arr1.concat(arr2);
 
 /* Yes, the statement also applies to array and object destructuring. When you destructure an object into variables, the variables are new and independent references to the values of the original object properties. Any changes made to these variables do not affect the original object.*/
 
-// Also, the variables that are created before are reassigned with new values
+// Also, the variables that are created before are reassigned with new values during destructuring. Also, changing the values of these variables or variables that are created during destructuring, anywhere in the code will effect the original values as the new values will be reassigned to them.

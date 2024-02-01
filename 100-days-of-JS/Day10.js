@@ -62,22 +62,32 @@ const replceFirstDigit = (str) => str.replace(/[0-9]/, '$');
 console.log(replceFirstDigit('Abcd1Ab3434cde'));
 */
 
-/*
+
 // 6. Write a js program to comapare two objects to determine if the first one contains the same properties as the secondone (which may also have additional properties)
 
-const compareObj = (obj1, obj2) => {
-    // let arr1 = Object.keys(obj1);
-    // let arr2 = Object.keys(obj2);
+// const compareObj = (obj1, obj2) => {
+//     // let arr1 = Object.keys(obj1);
+//     // let arr2 = Object.keys(obj2);
 
-    // for (let val of arr1) {
-    //     if (!arr2.includes(val)) return false;
-    // }
+//     // for (let val of arr1) {
+//     //     if (!arr2.includes(val)) return false;
+//     // }
 
-    // return true;
+//     // return true;
 
-    Object.keys(obj1).every(key => obj2[key]);
-}
+//     return Object.keys(obj1).every(key => obj2[key]);
+// }
 
-console.log(compareObj({name: "Divy", age: 21}, {name: "Khushi", sub: "ppppp"}));
-*/
+// console.log(compareObj({name: "Divy", age: 21}, {name: "Khushi", sub: "ppppp"}));
 
+// last ques explanation
+// let obj = {
+//     name: 'Divy',
+//     age: 21
+// }
+
+// if(obj['sub']) {                        // as obj do not have a property sub then it returns undefined and as undefined is a falsy value so, above in every method false is returned if obj2 does not have a property that is inside obj1.
+//     console.log('chala');
+// }else {
+//     console.log('galat');
+// }

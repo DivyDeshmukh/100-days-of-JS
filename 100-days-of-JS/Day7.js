@@ -3,7 +3,7 @@
 /*
 // 1. Write a js function that returns a passed string with letters in alphabetical order
 function alpha (str) {
-    return str.split('').sort().join('');
+    return str.split('').sort().join('');                           // by default sort() function sorts an string in alphabetical order 
 }
 
 console.log(alpha ("apple"));

@@ -99,6 +99,7 @@ console.log(factorial("oiajfoafoajfa5454"));
 
 /*
 // Ques 5: How to find a prime number in js
+ 
 // function primeNum (num) {
 
     
@@ -129,6 +130,7 @@ console.log(factorial("oiajfoafoajfa5454"));
 //     }
 // }
 
+// Logic for prime:- Divide the given num from 2 to its sqrt, and if any number between that divides that given number then it is not a prime number.
 // another method
 function isPrime(num) {
     if (typeof num !== 'number' || isNaN(num) || !Number.isInteger(num) || num <= 0) {

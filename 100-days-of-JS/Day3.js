@@ -109,7 +109,7 @@ console.log(test);
 // function union(arr1, arr2) {
 //     const arr = arr1.concat(arr2);
 
-//      to remove duplicates
+//     to remove duplicates
 //     const unionArr = arr.filter(function (val, i, self) {
 //         return self.indexOf(val) === i;
 //     });
