@@ -86,6 +86,13 @@ const getUniqueChars = (str) => str.split('').filter(
 // console.log(uniqueChar("aaaaabbbbbcccc"));
 console.log(getUniqueChars("aaabbbaaaccccbbb"));
 */
+/*
+// another efficient method
+const getUniqueChars = (str) => str.split('');
+
+const unique = [...new Set(getUniqueChars('aaabbbbcccccaaaa'))];
+console.log(unique);
+*/
 
 /*
 // 4. 
@@ -108,18 +115,30 @@ str.split('')
 console.log(getUniqueChars('abacddbec'));
 */
 
-// 5. Write a function groupBy that takes an array of objects and a property name, and returns an object where the keys are unique values of that property, and the values are arrays of objects that have the same value for that property.
 /*
+// 5. Write a function groupBy that takes an array of objects and a property name, and returns an object where the keys are unique values of that property, and the values are arrays of objects that have the same value for that property.
+
 Should output:
 {
     'A': [ { name: 'Alice', age: 20, grade: 'A' }, { name: 'Charlie', age: 21, grade: 'A' } ],
     'B': [ { name: 'Bob', age: 22, grade: 'B' }, { name: 'David', age: 20, grade: 'B' } ]
 }
-*/
-const groupBy = (students) => {
-    
-}
 
+const groupBy = (students, prop) => {
+    let obj = {};
+    for (let val of students) {
+        if(obj.hasOwnProperty(val[`${prop}`])) {
+            obj[`${val[prop]}`].push(val);
+        }else {
+            // obj[`${val[prop]}`] = [val];
+            obj[`${val[prop]}`] = []
+            obj[`${val[prop]}`].push(val);
+        }
+    }
+
+    return obj;
+}
+// The push method returns the new length of the array after the element has been added. Therefore, when you do [].push(val), it returns 1 (the new length of the array), not the array itself. Remember, it returns length so call directly on an array to push a value.
 const students = [
     { name: 'Alice', age: 20, grade: 'A' },
     { name: 'Bob', age: 22, grade: 'B' },
@@ -127,4 +146,5 @@ const students = [
     { name: 'David', age: 20, grade: 'B' },
 ];
 
-console.log(groupBy(students));
+console.log(groupBy(students, 'grade'));
+*/
