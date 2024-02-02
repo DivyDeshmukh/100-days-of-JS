@@ -91,3 +91,4 @@ console.log(replceFirstDigit('Abcd1Ab3434cde'));
 // }else {
 //     console.log('galat');
 // }
+
