@@ -91,7 +91,7 @@ document.querySelectorAll('input')
   -----------
   Add a further validation to check if the user input in the password and confirm password inputs match.  Show an error message if they do not.
 */
-// document.querySelector('.col button').addEventListener('click', (e)=> {
+// document.querySelector('#registrationForm').addEventListener('submit', (e)=> {
 //   if(!(document.querySelector('#password').value === document.querySelector('#confirmPassword').value)) {
 //     e.preventDefault();
 //     document.querySelector('#password').insertAdjacentHTML('afterEnd', '<span style="color: red;">Incorrect Password</span>'); 

@@ -92,3 +92,10 @@ console.log(replceFirstDigit('Abcd1Ab3434cde'));
 //     console.log('galat');
 // }
 
+abc()
+function abc() {
+    console.log(this);
+}
+
+
+// console.log(abc instanceof Object);
