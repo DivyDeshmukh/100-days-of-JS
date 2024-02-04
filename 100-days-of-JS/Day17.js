@@ -86,11 +86,11 @@ featuresBasic.querySelector("li:nth-child(2)").innerHTML = "3 GB storage";
 const pricing = {
   monthly: {
     basic: "10 / month",
-    pro: "30 / year"
+    pro: "30 / month"
   },
 
   annually: {
-    basic: "100 / month",
+    basic: "100 / year",
     pro: "300 / year"
   }
 };
@@ -118,7 +118,7 @@ const label2 = document.createElement("label");
 label2.textContent = "Annually";
 label2.id = "radio2";
 label2.for = "radio2";
-radio2.style.margin = "10px";
+radio2.style.margin = "10px"; 
 inputDiv.style.display = "flex";
 inputDiv.style.gap = "15px";
 
@@ -129,32 +129,19 @@ inputDiv.appendChild(label2);
 inputDiv.querySelector("#radio1").appendChild(radio1);
 inputDiv.querySelector("#radio2").appendChild(radio2);
 
-// radio1.addEventListener("change", (e) => {
-//   if (e.target.value) {
-//     document.querySelectorAll(".pricing").forEach((val, i) => {
-//       if (i === 1) {
-//         val.innerHTML = pricing.monthly.basic;
-//       } else {
-//         val.innerHTML = pricing.monthly.pro;
-//       }
-//     });
-//   }
-// });
+radio1.addEventListener('change', (e) => {
+  if(e.target.checked) {
+    basicPrice.innerHTML = `${pricing.monthly.basic}`;
+    proPrice.innerHTML = `${pricing.monthly.pro}`;
+  }
+});
 
-// radio2.addEventListener("change", (e) => {
-//   document.querySelectorAll(".pricing").forEach((val, i) => {
-//     if (e.target.value) {
-//       if (i === 1) {
-//         val.innerHTML = pricing.annually.basic;
-//       } else {
-//         val.innerHTML = pricing.annually.pro;
-//       }
-//     } else {
-//       if (i === 1) {
-//         val.innerHTML = pricing.monthly.basic;
-//       } else {
-//         val.innerHTML = pricing.monthly.pro;
-//       }
-//     }
-//   });
-// });
+radio2.addEventListener('change', (e) => {
+  if(e.target.checked) {
+    basicPrice.innerHTML = `${pricing.annually.basic}`;
+    proPrice.innerHTML = `${pricing.annually.pro}`;
+  }else {
+    basicPrice.innerHTML = `${pricing.monthly.basic}`;
+    proPrice.innerHTML = `${pricing.monthly.pro}`;
+  }
+});
