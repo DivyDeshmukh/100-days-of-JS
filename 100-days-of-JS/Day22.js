@@ -93,18 +93,23 @@ function reverse (str) {
 
 str = 'Hey there My name is Divy Deshmukh'
 console.log(reverse(str));
-*/
 
 let max = 1;
+const arr = [1, 2, 5, 21, 6, 9, 8];
+let num1;
+let num2;
 arr.forEach((val) => {
     for (var i = 0; i < arr.length; i++) {
         let diff = val - arr[i];
         if (diff > max) {
             max = diff;
+            num1 = val;
+            num2 = arr[i];
         }
     }
 });
 
-const arr = [1, 2, 5, 21, 6, 9, 8];
 
-console.log(max);
+
+console.log(`Max Difference: ${num1} - ${num2} = ${max}`);
+*/
