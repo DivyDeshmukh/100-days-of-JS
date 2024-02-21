@@ -80,7 +80,8 @@ console.log(arr);
 Array.prototype.mySlice = function (startIndex, endIndex) {
 
     let newArr = [];
-
+    // arguments represents the array of arguments that the function takes
+    
     if (arguments.length === 0) {
         return [...this];
     }else if (arguments.length === 1) {
