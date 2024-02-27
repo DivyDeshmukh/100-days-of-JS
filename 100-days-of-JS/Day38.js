@@ -154,7 +154,13 @@ function permutations(string) {
 }
 */
 
+/* 5. [1, 2, 3].map ((num) => {
+  if (num > 0) return;
 
+  return num*2;
+})
 
+// output:- [undefined, undefined, undefined] as it is retuning nothing
+*/
 
 
