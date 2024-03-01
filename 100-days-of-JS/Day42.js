@@ -65,3 +65,5 @@ console.log(obj);
 obj.name = 'abc'                    // Cannot assign to read only property 'name' of object '#<Object>'
 console.log(obj);
 */
+/* box is basically a label which is pointing to object stored in heap and we have applied freeze of that object in heap so for now we cannot add or modify properties but we can reassign a new reference or data to the box label present in stack and make it to point any other memory reference or non-primitive data type because non-primitive data types are only stored in heap. Your understanding about non-primitive data types being stored in the heap and the ability to reassign the label (variable) to new references is correct. Keep in mind that primitive data types (like numbers and strings) are stored directly in the stack, while non-primitive data types (like objects and arrays) have their references stored in the stack, pointing to their actual data stored in the heap.*/
+
