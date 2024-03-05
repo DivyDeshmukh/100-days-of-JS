@@ -66,7 +66,23 @@ console.log(person);
 
 // output:- {name: 'Frontend master', address: { city: null }}              // as nested objects are not freezed
 */
+const person = {
+    name: 'Frontend master',
+    address: {
+        city: 'MDNDocs'
+    }
+}
 
+<<<<<<< HEAD
 /* When you declare a variable with the const keyword in JavaScript, it means that the identifier cannot be reassigned to a new memory reference. However, it doesn't mean that the data to which the variable points (if it's an object or an array) cannot be modified.*/
 /* is it true that variables declared with const keyword can only point to one memory reference and they cannot be assigned with new memory reference although data present to reference to which they are pointing can be modified in case of reference data types*/
 /* This behavior is different from other languages where const might imply both an immutable reference and immutable data. In JavaScript, const provides an immutable reference for variables but doesn't prevent modifications to the underlying data structures (if they are mutable, like objects or arrays).*/
+=======
+Object.freeze(person);
+
+person.name = 'afafafaf';
+person.address.city = null;
+delete person.name;
+// Once an object is frozen, its properties cannot be added, deleted, or modified.
+console.log(person);
+>>>>>>> 3205c61 (updated)

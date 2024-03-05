@@ -5,7 +5,7 @@
 }
 
 myFunc(1, 2, 3);
-// it is interpreted like this:- const { x, y, z } = 1;
+// it is interpreted like this:- const { x, y, z } = 1;     here, 1 is not an object
 output:- undefined undefined undefined                              // When you call the function with separate arguments, the destructuring will not work as expected, and the variables x, y, and z will be undefined. The corrected explanation is that you will not get an error, but the values of x, y, and z will be undefined.
 */
 
