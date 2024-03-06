@@ -45,10 +45,10 @@ console.log(!typeof foo == 'string');
 // output:- false false                     // basically, first !typeof foo expression will be evaluated and it will be false in both cases bcoz typeof foo is 'string' and when we negate that 'string' it will become false and on comparing false with 'object' or  'string' we will get false.
 */
 
-/* 
+/* 5.
 var foo = function test() {
     console.log('inside test');
-    test(); // fine will run and can be used for recursive purposes.
+    test(); // fine, will run and can be used for recursive purposes.
 }
 
 test();
