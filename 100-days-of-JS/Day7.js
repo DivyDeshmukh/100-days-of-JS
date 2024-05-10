@@ -26,12 +26,12 @@ console.log(upperCase("Or bhai sab badiya"));
 
 /*
 // 3. Write a js func to get the number of occurences of each letter in specified string
-function numOfOcc (str, letter) {
+function numOfOcc (str) {
     let obj = {};
     let arr = str.split('');
     for (let val of arr) {
        if(obj.hasOwnProperty(val)) {
-        obj[val] += 1;
+        obj[val] + 1;
        }else{
         obj[val] = 1;
        }

@@ -55,13 +55,11 @@ console.log(isAscending([1,2,3,4,5,6,7,8,9,10]));
 console.log(isAscending([1,2,3,4,5,11,7,8,9,10]));
 */
 
-/*
+
 // 5. Write a js program to replace the first digit in a string (should contains at least one digit) with $ character
 
-const replceFirstDigit = (str) => str.replace(/[0-9]/, '$');
-console.log(replceFirstDigit('Abcd1Ab3434cde'));
-*/
-
+// const replceFirstDigit = (str) => str.replace(/[0-9]/, '$');
+// console.log(replceFirstDigit('Abcd1Ab3434cde'));
 
 // 6. Write a js program to comapare two objects to determine if the first one contains the same properties as the secondone (which may also have additional properties)
 
@@ -92,10 +90,10 @@ console.log(replceFirstDigit('Abcd1Ab3434cde'));
 //     console.log('galat');
 // }
 
-abc()
-function abc() {
-    console.log(this);
-}
+// abc()
+// function abc() {
+//     console.log(this);
+// }
 
-
+// console.log(abc instanceof Function);
 // console.log(abc instanceof Object);
