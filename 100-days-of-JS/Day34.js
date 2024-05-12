@@ -11,7 +11,7 @@ function checkAge (data) {
 }
 
 checkAge({age: 18});
-// as this object represent memory reference and hence they are not equal even if there values are equal, we are compaing memory references
+// as this object represent memory reference and hence they are not equal even if there values are equal, we are comparing memory references
 */
 
 /*
