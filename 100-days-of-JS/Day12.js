@@ -75,3 +75,5 @@ const peopleInDep = (arrOfObj) => {
 }
 
 console.log(peopleInDep(arrOfObj));
+
+
